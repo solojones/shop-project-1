@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-image: url("images/patt.png");
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    margin-right: -15px;
+    margin-left: -15px;
+    /* column-gap: 30px; */
+}
+
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.col-1 {
+    width: 8.33333%;
+}
+
+.col-2 {
+    width: 16.66667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+
+    display: flex;
+
+}
+
+.menu li {
+    width: 25%;
+}
+
+.menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: block;
+    text-align: center;
+    line-height: 50px; */
+    height: 50px;
+    text-decoration: none;
+    color: #2c71b8;
+    font-size: 21px;
+    border-left: 1px solid #2c71b8;
+
+}
+
+.menu li:last-child a {
+    border-right: 1px solid #2c71b8;
+}
+
+.menu a:hover,
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color: #2c71b8;
+}
+
+.dropdown {
+    display: inline-block;
+    overflow: hidden;
+
+
+}
+
+dropbtn {
+    display: block;
+    width: 50%;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #2c71b8;
+    min-width: 286px;
+    float: left;
+}
+
+.dropdown-content a {
+
+    display: block;
+    text-align: left;
+
+}
+
+.dropdown-content a:hover {
+    width: 286px;
+    display: block;
+    line-height: 40px;
+    background-color: #ffffff;
+    color: #2c71b8;
+    text-align: left;
+    padding-left: 25px;
+
+}
+
+.search {
+    display: block;
+    margin: 5px 20px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #2c71b8;
+    overflow: hidden;
+}
+
+input {
+    display: block;
+    text-align: left;
+    line-height: 40px;
+    border: 0;
+    color: #2c71b8;
+    background-color: #cdddee;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+
+}
