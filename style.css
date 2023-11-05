@@ -319,7 +319,9 @@ input {
     font-size: 21px;
 }
 
-
+input:hover {
+    background-color: #ffffff;
+}
 
 label {
     display: flex;
@@ -351,6 +353,36 @@ label:before {
 #GB6,
 #GB8 {
     display: none;
+}
+
+#Laptop,
+#Tablet,
+#Black,
+#Red,
+#Green,
+#Blue,
+#Orange,
+#GB1,
+#GB2,
+#GB4,
+#GB6,
+#GB8 {
+    display: none;
+}
+
+#Laptop:checked+label:before,
+#Tablet:checked+label:before,
+#Black:checked+label:before,
+#Red:checked+label:before,
+#Green:checked+label:before,
+#Blue:checked+label:before,
+#Orange:checked+label:before,
+#GB1:checked+label:before,
+#GB2:checked+label:before,
+#GB4:checked+label:before,
+#GB6:checked+label:before,
+#GB8:checked+label:before {
+    background-color: #ffffff;
 }
 
 .more-options {
